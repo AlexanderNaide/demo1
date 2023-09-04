@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /retrieve
+spring:
+  jackson:
+    serialization:
+      indent-output: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: 1216830
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/test
