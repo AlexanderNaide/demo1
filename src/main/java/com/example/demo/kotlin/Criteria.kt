@@ -5,7 +5,7 @@ enum class Criteria(name: String) {
     ABOVE("a"),
     BELOW("b");
 
-    fun get() = this
+    fun get() = name
 
     fun getVal(): String{
         println(name)
