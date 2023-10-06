@@ -1,6 +1,6 @@
 package com.example.demo.kotlin
 
-enum class Criteria(name: String) {
+enum class Criteria(private val value: String) {
     NONE("n"),
     ABOVE("a"),
     BELOW("b");
@@ -8,7 +8,7 @@ enum class Criteria(name: String) {
     fun get() = name
 
     fun getVal(): String{
-        println(name)
-        return name
+        println(value)
+        return value
     }
 }
