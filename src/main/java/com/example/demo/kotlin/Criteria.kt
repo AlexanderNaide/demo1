@@ -5,10 +5,17 @@ enum class Criteria(private val value: String) {
     ABOVE("a"),
     BELOW("b");
 
-    fun get() = name
+    fun value() = value
 
     fun getVal(): String{
-        println(value)
+//        println(value)
         return value
     }
+
+    companion object{
+        fun fromValue(v: String) : Criteria {
+            return entries.first { criteria -> criteria.value == v }
+        }
+    }
+
 }

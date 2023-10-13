@@ -19,9 +19,13 @@ fun main() {
 
     val criteriaA = Criteria.ABOVE
 
+    println(">>>>>>>>>>>>")
     println(criteriaN)
-    println(criteriaN.get())
+//    println(criteriaN.value())
+    println(criteriaN.name)
     println(criteriaN.getVal())
+
+    println(Criteria.fromValue("n"))
 
 
 }
